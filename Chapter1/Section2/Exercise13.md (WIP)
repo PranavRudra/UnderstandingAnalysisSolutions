@@ -1,0 +1,55 @@
+# Exercise 1.2.13
+
+## (a)
+
+The base case, i.e. $(A_1)^c = A_1^c$, is self-evident. 
+
+For the inductive hypothesis, assume that for some $k \in \mathbb{N}^{\geq 2}$
+
+```math
+(A_1 \cup A_2 \cup \dots \cup A_k)^c = (A_1^c \cap A_2^c \cap \dots \cap A_k^c)
+```
+
+Now for the inductive step, observe that
+
+```math
+(A_1 \cup A_2 \cup \dots \cup A_k \cup A_{k + 1})^c = ((A_1 \cup A_2 \cup \dots \cup A_k) \cup A_{k + 1})^c
+```
+
+by repeated application of the associative set identity
+
+```math
+A \cup B \cup C = (A \cup B) \cup C
+```
+
+And by the following DeMorgan identity from Exercise 1.2.5, 
+
+```math
+(A \cup B)^c = A^c \cap B^c
+```
+
+we have
+
+```math
+((A_1 \cup A_2 \cup \dots \cup A_k) \cup A_{k + 1})^c = (A_1 \cup A_2 \cup \dots \cup A_k)^c \cap A_{k + 1}^c
+```
+
+Now, by the inductive hypothesis,
+
+```math
+(A_1 \cup A_2 \cup \dots \cup A_k)^c \cap A_{k + 1}^c = (A_1^c \cap A_2^c \cap \dots \cap A_k^c) \cap A_{k + 1}^c 
+```
+
+and repeated application of the associative set identity
+
+```math
+A \cap B \cap C = (A \cap B) \cap C
+```
+
+we can say
+
+```math
+(A_1^c \cap A_2^c \cap \dots \cap A_k^c) \cap A_{k + 1}^c = (A_1^c \cap A_2^c \cap \dots \cap A_k^c \cap A_{k + 1}^c)
+```
+
+proving the proposition.
