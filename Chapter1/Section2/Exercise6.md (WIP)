@@ -18,6 +18,15 @@ $$
 |a + b| = -(a + b) \leq -(a + b) = -a + -b = |a| + |b|
 $$
 
+## (b)
+
+$$
+\begin{align*}
+(a + b)^2 &\leq (|a| + b)^2\ &&(\text{since } a \leq |a|) \\
+&\leq (|a| + |b|)^2\ &&(\text{since } b \leq |b|)
+\end{align*}
+$$
+
 ## (c)
 
 Observe that 
