@@ -27,6 +27,16 @@ $$
 \end{align*}
 $$
 
+By a similar strategy, we have
+
+$$
+\begin{align*}
+|a + b| &\leq ||a| + b| &&(\text{since } a \leq |a|) \\
+&\leq ||a| + |b|| &&(\text{since } b \leq |b|) \\
+&= |a| + |b|  &&(\text{since } |a| \geq 0 \land |b| \geq 0 \implies |a| + |b| \geq 0)
+\end{align*}
+$$
+
 ## (c)
 
 Observe that 
