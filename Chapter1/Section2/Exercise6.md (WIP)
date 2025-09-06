@@ -1,0 +1,32 @@
+# Exercise 1.2.6
+
+## (c)
+
+Observe that 
+
+$$
+a - b = (a - c) + ((c - d) + (d - b))
+$$ 
+
+which implies, by repeated use of the triangle inequality,
+
+$$
+\begin{align*}
+|a - b| &\leq |a - c| + |(c - d) + (d - b)| \\
+        &\leq |a - c| + |c - d| + |d - b|
+\end{align*}
+$$
+
+## (d)
+
+Observe that 
+
+$$
+a = (a - b) + b
+$$
+
+which implies, by the triangle inequality,
+
+$$
+|a| \leq |a - b| + |b| \implies |a| - |b| \leq |a - b| \implies 
+$$
